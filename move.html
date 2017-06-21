@@ -1,0 +1,25 @@
+<html>
+<head>
+
+<script src = "/home/shruti/django/jquery-3.2.1.min.js "></script>
+
+</head>
+<body>
+
+	<button onclick = "move()">Click me !</button>
+	
+<script>
+
+function move() {
+	var x;
+	for(x = 0; x < 10; x++)
+	{
+	var y = 2 * Math.pow(x,2) + 6 * x + 1;
+	$("button").css("margin-left", x);
+	$("button").css("margin-top", y);
+	}
+};
+
+</script>	
+</body>
+</html>
