@@ -1,0 +1,50 @@
+<html>  
+<head>  
+<script src="/home/shruti/django/jquery-3.2.1.min.js"></script> 
+
+<style type="text/css">
+table tr td{  
+    width: 50%;  
+    border: 1px solid #D0F5A9;  
+    padding: 5px;  
+}  
+table tr th{  
+    border: 1px solid #D0F5A9;  
+    padding: 5px;  
+}  
+.zebra{  
+    background-color: #D0F5A9;  
+}  
+</style>
+</head>  
+<body>  
+<div class="table_style">  
+<table>  
+    <tr>  
+        <th>Name</th>  
+        <th>Country</th>  
+    </tr>  
+    <tr>  
+        <td>Simran</td>  
+        <td>India</td>  
+    </tr>  
+    <tr>  
+        <td>Enas</td>  
+        <td>Iran</td>  
+    </tr>  
+    <tr>  
+        <td>Fiona</td>  
+        <td>USA</td>  
+    </tr>  
+     
+</table>  
+</div>  
+
+</body>  
+</html>  
+
+<script>
+	$(document).ready(function(){  
+    $("tr:odd").addClass("zebra");  
+}); 
+</script>

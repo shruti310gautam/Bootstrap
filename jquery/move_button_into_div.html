@@ -1,0 +1,23 @@
+<html>  
+<head>  
+<script src="/home/shruti/django/jquery-3.2.1.min.js"></script>  
+</head>  
+<body>  
+<div id="source">
+<button id="btnDefault" onclick="moveButton(this)">Button1</button>  
+    <button id="btnPrimary" onclick="moveButton(this)">Button2</button>  
+</div>
+<div id="dest"></div>      
+</body>  
+</html>  
+
+<script>
+	function moveButton(elem){    
+       if( $(elem).parent().attr("id") == "source" ){  
+        $(elem).detach().appendTo('#dest');  
+    }  
+    else{  
+        $(elem).detach().appendTo('#source');   
+    }  
+}  
+</script>

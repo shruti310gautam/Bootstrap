@@ -1,0 +1,28 @@
+<html>  
+<head>  
+<script src="/home/shruti/django/jquery-3.2.1.min.js"></script> 
+
+<style>
+	p.center {  
+    text-align: center;  
+    color: blue;  
+}  
+  
+p.large {  
+    font-size: 200%;  
+}  
+</style> 
+</head>  
+
+<body>  
+<p id="item" class="center large">Welcome to the Demo !</p>  
+<input type="button" value="Click to remove all classes" onclick="remove_classes()" /> 
+</body>  
+</html> 
+
+<script>
+	function remove_classes()  
+{  
+$("#item").removeClass();  
+}  
+</script>

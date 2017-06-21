@@ -1,0 +1,21 @@
+<html>  
+<head>  
+<script src="/home/shruti/django/jquery-3.2.1.min.js"></script>  
+</head>  
+<body>  
+<div id="abc">
+	<ul>
+	<li>Green</li>
+	<li>Blue</li>
+	<li>Orange</li>
+	</ul>
+</div>  
+<button>Click to Add</button>
+</body>  
+</html> 
+
+<script>
+	$("button").click(function(){
+		$("#abc").append("<li>Red</li>");
+	});
+</script>

@@ -1,0 +1,20 @@
+<html>  
+<head>  
+<script src="/home/shruti/django/jquery-3.2.1.min.js"></script>  
+</head> 
+<script>
+	$(document).ready(function(){
+    $("button").click(function(){
+        $("#broken").hide("slow", function(){
+            $("#good").show("slow");
+        });
+    });
+});
+</script> 
+<body>  
+<button>Hide</button>
+<img id ="broken" src="/home/shruti/Desktop/b.JPG" width="50" height="50"/>
+<img id ="good" src ="/home/shruti/Desktop/good.jpg" width="50" height="50"/>
+</body>   
+</html> 
+

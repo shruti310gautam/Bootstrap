@@ -1,0 +1,27 @@
+<html>
+<head>
+<script src="/home/shruti/django/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<p>This domain is established to be used for illustrative examples in documents. You may use this domain in examples without prior coordination or asking for permission.</p>  
+<input type="button" value="Click to add new division" onclick="new_div()" />
+
+</body>
+</html>
+
+<script>
+function new_div() {
+$(document).ready(function() {
+  var test = {
+    id: "div",
+    class: "divclass",
+    css: {
+      "color": "Red"
+    }
+  };
+  var $div = $("<div>", test);
+  $("div").html("New Division");
+  $("body").append($div);
+});
+}
+</script>

@@ -1,0 +1,22 @@
+<html>  
+<head>  
+<script src="/home/shruti/django/jquery-3.2.1.min.js"></script>  
+</head>  
+<body>  
+<select id='abc'>  
+  <option>Red</option>  
+  <option>Blue</option>  
+  <option>Green</option>  
+</select>  
+<button onclick="Remove_options()">click to remove</button>
+</body>  
+</html> 
+
+<script>
+	function Remove_options()  
+{  
+$('#abc')  
+    .empty()  
+    .append('<option>White</option>');  
+}  
+</script>

@@ -1,0 +1,20 @@
+<html>  
+<head>  
+<script src="/home/shruti/django/jquery-3.2.1.min.js"></script>  
+</head>  
+<body>  
+<div id="abc"></div>  
+</body>  
+</html> 
+
+<script>
+	colors = { "color1": "Red", "color2": "Green", 'color3': "Blue" };  
+  
+$.each(colors, function(key, value) {  
+    $('#abc').append($("<option/>", {  
+        value: key,  
+        text: value  
+    }));  
+});  
+
+</script>

@@ -1,0 +1,21 @@
+<html>  
+<head>  
+<script src="/home/shruti/django/jquery-3.2.1.min.js"></script>  
+</head>  
+<body>  
+<input id="cb" type="checkbox"/>I accept<br>    
+<input id="sbtn" disabled="disabled" type="submit"/>  
+</body>  
+</html>  
+
+<script>
+	$("#cb").click(function(){
+		if($("#sbtn").is(":disabled")){
+			$("#sbtn").removeAttr("disabled");
+		}
+		else {
+			$("#sbtn").attr("disabled", "disabled");
+		}
+	});
+
+</script>

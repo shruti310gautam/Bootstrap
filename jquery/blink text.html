@@ -1,0 +1,16 @@
+<html>  
+<head>  
+<script src="/home/shruti/django/jquery-3.2.1.min.js"></script>  
+</head>  
+<body>  
+<p>Have a <span id="blink">Nice Day</span> EveryOne !</p> 
+</body>  
+</html>  
+
+<script>
+	function blink_text(){
+		$("#blink").fadeOut("200");
+		$("#blink").fadeIn("200");
+	}
+	setInterval(blink_text, 1000);
+</script>

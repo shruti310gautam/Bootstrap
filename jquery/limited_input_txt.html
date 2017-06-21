@@ -1,0 +1,18 @@
+<html>  
+<head>  
+<script src="/home/shruti/django/jquery-3.2.1.min.js"></script>  
+</head>  
+<body>  
+<label>Maximum 15 characters allowed !</label><br></br>
+<input id ="textarea" type = "text" maxlength="15" /><br></br>
+<span id="rchars">15</span> Character(s) Remaining !
+</body>  
+</html>  
+
+<script>
+	var maxLength = 15;  
+$('#textarea').keyup(function() {  
+  var textlen = maxLength - $(this).val().length;  
+  $('#rchars').text(textlen);  
+});  
+</script>
